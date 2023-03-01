@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px)  {
+
+    .nav {
+        display: flex;
+        background-color: rgb(75, 128, 241);
+        border: 1px solid black;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .nav form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 45%;
+        margin-right: 30px;
+    }
+
+    .nav-links {
+        font-size: 8px;
+        color: white;
+    }
+
+    #cart {
+        width: 15px;
+    }
+
+    #input {
+        width: 60px;
+        height: 10px;
+        border-radius: 15px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 70%;
+        border: 1px solid black;
+        margin: auto;
+        padding: 5px;
+    }
+
+    #featured-description {
+        font-size: 10px;
+    }
+
+    #golden-sword {
+        width: 100%;
+    }
+
+    button {
+        background-color: limegreen;
+        color: white;
+        padding: 5px;
+        width: fit-content;
+        box-shadow: 2px 2px 1px 0px black;
+        font-size: 8px;
+    }
+
+    .other-products-container {
+        border-top: 2px solid black;
+    }
+
+    #swords {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #swords div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 2px;
+    }
+
+    .sword {
+        border: 1px solid black;
+        width: 20%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sword p {
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .sword button {
+        margin-top: 10px;
+        width: 90%;
+        height: 20px;
+    }
+
+    #swords img {
+        height: 100px;
+        padding: 10px;
+    }
+
+    #footer {
+        text-align: center;
+        background-color: rgb(75, 128, 241);
+        border: 1px solid black;
+        color: white;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+}
+
+@media (max-width: 775px ) and (min-width: 475px){
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+        background-image: linear-gradient(to right, rgb(208, 245, 254), rgb(163, 241, 255), rgb(83, 221, 255), rgb(15, 167, 255));
+    }
+
+    h1{
+        width: 100%;
+        border-radius: 25px;
+        font-size: 1.1em;
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 5%;
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    .nav-links{
+        color: black;
+        font-size: .7em;
+    }
+
+    .container{
+        border: 2px ridge gray;
+        padding: 5%;
+    }
+
+    #feat-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #feat-description-wrapper{
+    flex: 2;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #feat-prod-wrapper{
+        flex: 3;
+    }
+
+    #golden-sword{
+        width: 90%;
+    }
+
+    .other-products-container{
+        text-align: center;
+        padding: 5%;
+    }
+
+    #swords{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 5px;
+    }
+
+    #swords div{
+        display: flex;
+        width: 100%;
+        margin: 0px auto;
+        gap: 5px;
+    }
+
+    .sword{
+        padding: 5%;
+    }
+
+    #footer{
+        color: black;
+        background-image: linear-gradient(to right, rgb(208, 245, 254), rgb(163, 241, 255), rgb(83, 221, 255), rgb(15, 167, 255));
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    input{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 475px ){
+
+    .nav{
+        background-image: linear-gradient(to right, rgb(208, 245, 254), rgb(163, 241, 255), rgb(83, 221, 255), rgb(15, 167, 255));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2%;
+        padding: 5%;
+        height: fit-content;
+    }
+
+    h1{
+        width: 100%;
+        border-radius: 25px;
+        font-size: 1.1em;
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+        margin-bottom: 15px;
+    }
+
+    form{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-wrap: break-word;
+        align-items: center;
+    }
+
+    form p{
+        display: none;
+    }
+
+    .nav-links{
+        color: black;
+        font-size: .7em;
+    }
+
+    .container{
+        text-align: center;
+        padding: 5%;
+        border: 2px ridge gray;
+    }
+
+    .other-products-container{
+        padding: 5%;
+    }
+
+    #swords{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #swords div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sword{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* THREE TYPES OF MEDIA QUERIES */
+
+/* 
+@media screen
+@media print
+@media speech
+@media all
+@media
+ */
+
+/* if you remove the 'type' specification, it defaults to all  */
+/* --------------------------*/
+
+/*
+AND* POINTS TO CONDITION BY PROPERTIES
+@media all and ([PLACE CONDITION HERE])
+ */
+
+/* --------------------------*/
+
+/* 
+TWO VIEWING MODES => PORTRAIT VS LANDSCAPE 
+DETERMINED BY IF WIDTH < HEIGHT (PORTRAIT) || HEIGHT < WIDTH (LANDSCAPE) 
+*/
+
+/* 
+@media (orientation: landscape) {
+    style landscape here
+}
+
+COMBINE CONDITIONS WITH AND
+@media (orientation: landscape) and (max-width: px){
+    execute styling
+}
+*/
